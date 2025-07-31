@@ -22,6 +22,9 @@ builder.Services.AddScoped<BookService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<UserService>();
 
+builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
+builder.Services.AddScoped<ReservationService>();
+
 
 var app = builder.Build();
 
